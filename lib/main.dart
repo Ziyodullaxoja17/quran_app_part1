@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_46home/data/repository/quran_app_repo.dart';
-import 'package:flutter_46home/presentation/screens/main_screen.dart';
 import 'package:flutter_46home/presentation/screens/splash_screen.dart';
 import 'package:flutter_46home/provider/quran_provider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
             QuranProvider(quranAppRepo: QuranAppRepo())..fetchSurah(),
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: MainScreen(),
+          home: SplashScreen(),
         ),
       ),
     );
